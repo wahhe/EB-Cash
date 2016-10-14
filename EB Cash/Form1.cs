@@ -66,7 +66,7 @@ namespace EB_Cash
 
         public EBCash()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
        
