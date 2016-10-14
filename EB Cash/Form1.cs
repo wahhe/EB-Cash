@@ -60,7 +60,7 @@ namespace EB_Cash
             Pen drawPen = new Pen(Color.Black, 2);
             SolidBrush drawBrush = new SolidBrush(Color.White);
 
-            formGraphics.DrawLine(drawPen, 200, 200, 100, 100);
+            formGraphics.DrawLine(drawPen, 200, 200, 100, 100); 
            
         }
 
