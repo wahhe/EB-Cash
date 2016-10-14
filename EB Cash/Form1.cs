@@ -60,8 +60,9 @@ namespace EB_Cash
             Pen drawPen = new Pen(Color.Black, 3);
             SolidBrush drawBrush = new SolidBrush(Color.White);
 
-            //make up the receipt
+            //make up the receipt, print it
             formGraphics.DrawRectangle(drawPen, 350, 90, 350, 410);
+
 
         }
 
