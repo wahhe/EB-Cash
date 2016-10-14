@@ -57,11 +57,12 @@ namespace EB_Cash
         private void Printbutton_Click(object sender, EventArgs e)
         {
             Graphics formGraphics = this.CreateGraphics();
-            Pen drawPen = new Pen(Color.Black, 2);
+            Pen drawPen = new Pen(Color.Black, 3);
             SolidBrush drawBrush = new SolidBrush(Color.White);
 
-            formGraphics.DrawLine(drawPen, 200, 200, 100, 100); 
-           
+            //make up the receipt
+            formGraphics.DrawRectangle(drawPen, 350, 90, 350, 410);
+
         }
 
         public EBCash()
