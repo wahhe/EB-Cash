@@ -56,12 +56,31 @@ namespace EB_Cash
         //set the receipt printer up and creat a receipt
         private void Printbutton_Click(object sender, EventArgs e)
         {
-            Graphics formGraphics = this.CreateGraphics();
+            Graphics fg1 = this.CreateGraphics();
+            Graphics fg2 = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Black, 3);
-            SolidBrush drawBrush = new SolidBrush(Color.White);
+            SolidBrush frameBrush = new SolidBrush(Color.White);
+            Font titleFont = new Font("Trajan Pro", 12, FontStyle.Bold);
+            SolidBrush titleBrush = new SolidBrush(Color.Black);
+            SolidBrush fontBrush = new SolidBrush(Color.Black);
+            Font wordFont = new Font("Arial", 10, FontStyle.Bold);
+
 
             //make up the receipt, print it
-            formGraphics.DrawRectangle(drawPen, 350, 90, 350, 410);
+            fg1.DrawRectangle(drawPen, 350, 90, 350, 410);
+            fg1.FillRectangle(frameBrush, 350, 90, 350, 410);
+
+            fg2.DrawString("Welcome to the EatBurger", titleFont, titleBrush, 400, 110);
+            fg2.DrawString("Order #0816", wordFont, fontBrush, 380, 150);
+            fg2.DrawString("beef", wordFont, fontBrush, 380, 165);
+            fg2.DrawString("chicken", wordFont, fontBrush, 380, 180);
+
+
+
+
+
+
+
 
 
         }
