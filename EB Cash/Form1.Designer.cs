@@ -56,6 +56,8 @@
             this.changelabel = new System.Windows.Forms.Label();
             this.changeP = new System.Windows.Forms.Label();
             this.Printbutton = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.outputlabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // EBlabel
@@ -311,11 +313,33 @@
             this.Printbutton.UseVisualStyleBackColor = true;
             this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
             // 
+            // clear
+            // 
+            this.clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clear.Location = new System.Drawing.Point(714, 481);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(57, 23);
+            this.clear.TabIndex = 29;
+            this.clear.Text = "Clear";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
+            // outputlabel
+            // 
+            this.outputlabel.AutoSize = true;
+            this.outputlabel.Location = new System.Drawing.Point(293, 293);
+            this.outputlabel.Name = "outputlabel";
+            this.outputlabel.Size = new System.Drawing.Size(0, 13);
+            this.outputlabel.TabIndex = 30;
+            // 
             // EBCash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 516);
+            this.Controls.Add(this.outputlabel);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.Printbutton);
             this.Controls.Add(this.changeP);
             this.Controls.Add(this.changelabel);
@@ -346,6 +370,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EBCash";
             this.Text = "EatBurger Cash Register";
+           // this.Load += new System.EventHandler(this.EBCash_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,6 +405,8 @@
         private System.Windows.Forms.Label changelabel;
         private System.Windows.Forms.Label changeP;
         private System.Windows.Forms.Button Printbutton;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Label outputlabel;
     }
 }
 
